@@ -10,11 +10,6 @@ import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 import Socials from "../Socials"
 import Footer from "../Footer"
 
-// export const metadata = {
-//   title: 'Director',
-//   description: 'Home Page for Sicu Aura',
-// }
-
 export default function Directors() {
   return (
     <>
