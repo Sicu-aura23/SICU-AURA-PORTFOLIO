@@ -137,11 +137,11 @@ const Footer = () => {
             <Image className=' hover:cursor-pointer' onClick={()=>window.open('https://www.linkedin.com/company/sicu-aura/')} src={linkedin} />
             <Image  className=' hover:cursor-pointer' onClick={()=>window.open('https://www.facebook.com/profile.php?id=100092369332099&mibextid=LQQJ4d')} src={facebook} />
             <Image  className=' hover:cursor-pointer' onClick={()=>window.open('https://twitter.com/SicuAura')}  />
-            <Image  className=' hover:cursor-pointer' onClick={()=>window.open('https://www.instagram.com/dream_is_live_/')}  style={{marginLeft:"-15px"}} src={instagram}  />
+            <Image  className=' hover:cursor-pointer' onClick={()=>window.open('https://instagram.com/sicu.aura')}  style={{marginLeft:"-15px"}} src={instagram}  />
                 {/* <FaLinkedin className=' hover:cursor-pointer' onClick={()=>window.open('https://www.linkedin.com/company/sicu-aura/')} />
                 <FaSquareFacebook className=' hover:cursor-pointer' onClick={()=>window.open('https://www.facebook.com/profile.php?id=100092369332099&mibextid=LQQJ4d')} />
                 <FaTwitter className=' hover:cursor-pointer' onClick={()=>window.open('https://twitter.com/SicuAura')} /> */}
-                <Image className='w-12' src={whatsapp}  />
+                <Image className='w-12 hover:cursor-pointer' onClick={()=>window.open('https://whatsapp.com/channel/0029Va90UM46RGJGdjSrNH3E')} src={whatsapp}  />
               
                 
             </div>

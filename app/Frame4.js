@@ -19,7 +19,7 @@ export default function Frame1 () {
                 <p className=' font-Inknut text-4xl font-light'>Follow Us on</p>
                 {/* <img src='https://logospng.org/download/instagram/logo-instagram-4096.png' className='w-[400px]' alt='Phone' /> */}
                 <div className='flex flex-row items-center'   >
-                <Image  className=' hover:cursor-pointer py-10' width={500} src={instagram}/> 
+                <Image onClick={()=>window.open('https://instagram.com/sicu.aura')}  className=' hover:cursor-pointer py-10' width={500} src={instagram}/> 
 
                 </div>
                 <p className=' font-Inknut text-lg font-normal'>Get the opportunity to experience Next Generation SOS System at first. 200 users will be selected as a Beta Tester on a first come first serve basis. Testing will be done in 8 phases. Each phase’s duration will be 7 days and there will be 200 Testers.</p>

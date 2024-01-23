@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 import Navbar from "../Navbar"
 import Rishav from "@/public/Rishav.svg"
@@ -7,13 +8,12 @@ import Atitle from "@/public/Group677.png"
 
 import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 import Socials from "../Socials"
-import Footer2 from "../Footer2"
 import Footer from "../Footer"
 
-export const metadata = {
-  title: 'Director',
-  description: 'Home Page for Sicu Aura',
-}
+// export const metadata = {
+//   title: 'Director',
+//   description: 'Home Page for Sicu Aura',
+// }
 
 export default function Directors() {
   return (
@@ -32,10 +32,10 @@ export default function Directors() {
           <h1 className=" me-[20%]  font-Inknut font-medium text-base">Founder and CEO</h1>
           <p className="me-[45%] font-Inknut font-medium text-sm">-Sicu-aura</p>
           <div className="flex flex-row gap-6 w-48 mt-5 me-5">
-              <FaFacebook size={24}/>
-              <FaLinkedin size={24}/>
-              <FaInstagram size={24}/>
-              <FaTwitter size={24}/>
+              <FaFacebook className=' hover:cursor-pointer' onClick={()=>window.open('https://www.facebook.com/Rishav.ghosh.714?mibextid=tPfjzR')} size={24}/>
+              <FaLinkedin  className=' hover:cursor-pointer' onClick={()=>window.open('https://www.linkedin.com/in/rishav-ghosh-sicu-aura')} size={24}/>
+              <FaInstagram   className=' hover:cursor-pointer' onClick={()=>window.open('https://www.instagram.com/dream_is_live_')}  size={24}/>
+              <FaTwitter className=' hover:cursor-pointer' size={24}/>
           </div>
         </div>
         <div className="flex flex-col justify-evenly items-center gap-4">
