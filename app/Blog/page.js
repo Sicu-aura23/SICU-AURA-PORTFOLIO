@@ -507,7 +507,7 @@ export default function Blog() {
   // </main>
     <main className="flex flex-col w-screen h-auto items-center justify-between font-Kadwa">
       <Navbar />
-      <h1 className=" font-Kadwa font-bold text-5xl md:text-6xl lg:text-9xl mb-12 mt-20 border-b border-gray-400 w-max px-64 text-center">
+      <h1 className=" font-Kadwa font-bold text-5xl md:text-6xl lg:text-9xl mb-12 mt-20 border-b border-gray-400 w-max px-10 md:px-64 text-center">
         THE BLOG
       </h1>
       {isLoading ? (
@@ -517,10 +517,10 @@ export default function Blog() {
         <div>
           <Socials top="40" />
         </div>
-        <section className="flex-1 flex flex- justify-between items-start  ">
-          <div className=" flex flex-col gap-3 mb-24">
-            <div className="w-[110%] ">
-            <video  controls autoPlay>
+        <section className="flex-1 flex justify-between md:items-start  ">
+          <div className=" flex flex-col gap-3 mb-24 items-center md:items-start">
+            <div className="w-[110%] ms-6 md:ms-0">
+            <video controls autoPlay>
       <source src={posts[0].imageUrl} type="video/mp4" />
      
     </video>
@@ -538,12 +538,12 @@ export default function Blog() {
               {posts[0].date}
             
             </p>
-            <h2 className="font-Kadwa font-bold text-2xl my-4">
+            <h2 className="font-Kadwa font-bold text-2xl text-center my-4">
               {posts[0].title}
           
             </h2>
             <p
-              className="font-Kadwa font-bold text-sm my-4"
+              className="font-Kadwa font-bold text-center text-sm my-4"
               style={{ color: "#6D6D6D" }}
             >
               {posts[0].tagline}...
@@ -558,144 +558,65 @@ export default function Blog() {
             </p>
           </div>
         </section>
-        {/* <section className=" flex flex-1 flex-col gap-0 ">
-                <p className=" font-Kadwa font-medium text-lg text-gray-400">
-                  Latest Uploads
-                </p>
-                <div className="flex flex-row border-b border-gray-400 py-10 ">
-         
-         
-                  <video width="200" height="100" controls>
-                    <source src={posts[1].imageUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div className=" flex flex-col ps-10 items-start justify-center">
-                    <p className=" text-ellipsis font-Kadwa text-sm font-extralight">
-                      {posts[1].date}
-                    </p>
-                    <h2 className="font-Kadwa font-bold text-lg my-4">{posts[1].title}</h2>
-                    <Link href={`/Blog/${posts[1].id}`}className="text-xs ms-2" >
-                      <Button colorScheme='teal'>
-                        Read More
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex flex-row border-b border-gray-400 py-10 ">
-                  <Image src={posts[2].imageUrl} loading='eager' height='100' width='150' className="" alt="blogpost banner"/>
-                  <div className=" flex flex-col ps-10 items-start justify-center">
-                    <p className=" text-ellipsis font-Kadwa text-sm font-extralight">
-                      {posts[2].date}
-                    </p>
-                    <h2 className="font-Kadwa font-bold text-lg my-4">{posts[2].title}</h2>
-                    <Link href={`/Blog/${posts[2].id}`}className="text-xs ms-2" >
-                      <Button colorScheme='teal'>
-                        Read More
-                      </Button>
-                    </Link>
-                    
-                    </div>
-                </div>
-                    <div className="flex flex-row  py-10 ">
-                      <Image src={posts[3].imageUrl} loading='eager' height='100' width='150' className=" object-cover" alt="blogpost banner"/>
-                      <div className=" flex flex-col ps-10 items-start justify-center">
-                        <p className=" text-ellipsis font-Kadwa text-sm font-extralight">
-                          {posts[3].date}
-                        </p>
-                        <h2 className="font-Kadwa font-bold text-lg my-4">{posts[3].title}</h2>
-                        <Link href={`/Blog/${posts[3].id}`}className="text-xs ms-2" style={{color:"violet"}}>
-                          <Button colorScheme='teal'>
-                            Read More
-                          </Button>
-                        </Link>
-                        
-                      </div>
-                    </div>
-                    
-                </section>           */}
-                 <section className=" flex flex-1 flex-col gap-0 ms-[4%] " >
-           <p className=" font-Kadwa  text-lg font-semibold text-gray-400">
+                 <section className=" flex flex-1 items-center md:items-start flex-col gap-0 ms-[4%] " >
+           <p className=" font-Kadwa  text-lg font-semibold  text-gray-400">
          Latest Uploads
          </p>
-          <div className="flex flex-row border-b border-gray-400 py-5 ">
-            {/* <Image
-    //           src={posts[1].imageUrl}
-    //           loading="eager"
-    //           height="100"
-    //           width="200"
-    //           className=" object-cover"
-    //           alt="blogpost banner"
-    //         /> */}
-           {/* <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7064501702707560448?compact=1"
-              height="200"
-              width="300"
-              frameborder="0"
-              allowfullscreen=""
-              title="Embedded post"
-            ></iframe> */}
+          <div className="flex flex-col items-center md:flex-row  border-b border-gray-400 py-5 latest-blogs">
               <video width="200" height="100" controls>
                     <source src={posts[1].imageUrl} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-            <div className=" flex flex-col ps-10 items-start justify-center">
-              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-sm font-extralight">
+            <div className=" flex flex-col items-center md:ps-10 md:items-start justify-center">
+              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-xs md:text-sm font-extralight">
                 {posts[1].date}
              
               </p>
-              <h2 className="font-Kadwa font-bold text-lg my-4">
+              <h2 className="font-Kadwa font-bold text-sm md:text-lg my-4">
                 {posts[1].title}
              
               </h2>
               <Link
                 href={`/Blog/${posts[1].id}`}
-                className="text-xs ms-2"
+                className="text-xs md:ms-2"
                 style={{ color: "violet" }}
               >
-                 <Button colorScheme='teal'>
+                 <Button className=" text-xs md:text-sm " colorScheme='teal'>
                         Read More
                       </Button>
               </Link>
             </div>
           </div>
-          <div className="flex flex-row border-b border-gray-400 py-10 h-[210px] ">
+          <div className="flex flex-col items-center md:flex-row  border-b border-gray-400 py-5 w-full md:h-[210px] ">
             <Image
               src={posts[2].imageUrl}
               loading="eager"
               height="100"
               width="200"
-              className=" object-cover"
+              className=" h-[100px] object-cover"
               alt="blogpost banner"
             />
-            {/* <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7088127955763101696?compact=1"
-              height="200"
-              width="300"
-              frameborder="0"
-              allowfullscreen=""
-              title="Embedded post"
-            ></iframe> */}
-            <div className=" flex flex-col ps-10 items-start justify-center">
-              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-sm font-extralight">
+            <div className=" flex flex-col items-center md:ps-10 md:items-start justify-center">
+              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-xs md:text-sm font-extralight">
                 {posts[2].date}
              
               </p>
-              <h2 className="font-Kadwa font-bold text-lg my-4">
+              <h2 className="font-Kadwa font-bold text-sm  md:text-lg my-4">
                 {posts[2].title}
             
               </h2>
               <Link
                 href={`/Blog/${posts[2].id}`}
-                className="text-xs ms-2"
+                className="text-xs md:ms-2"
                 style={{ color: "violet" }}
               >
-                  <Button colorScheme='teal'>
+                  <Button className=" text-xs md:text-sm " colorScheme='teal'>
                         Read More
                       </Button>
               </Link>
             </div>
           </div>
-          <div className="flex flex-row  py-10 ">
+          <div className="flex flex-col items-center md:items-start md:flex-row py-5 latest-blogs">
             <Image
               src={posts[3].imageUrl}
               loading="eager"
@@ -704,29 +625,21 @@ export default function Blog() {
               className=" object-cover"
               alt="blogpost banner"
             />
-            {/* <img
-              src="https://media.licdn.com/dms/image/D5622AQFOZScMU1YHTg/feedshare-shrink_800/0/1705061970311?e=1708560000&v=beta&t=prtUNKMdUDNqLs4yOdJ7ccpYYwPFBfN3JME2UNH2gH0"
-              height="300"
-              width="300"
-              frameborder="0"
-              allowfullscreen=""
-              title="Embedded post"
-            ></img> */}
-            <div className=" flex flex-col ps-10 items-start justify-center">
-              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-sm font-extralight">
+            <div className=" flex flex-col items-center md:ps-10  md:items-start justify-center">
+              <p className=" text-[#6d6d6d] text-ellipsis font-Kadwa text-xs md:text-sm font-extralight">
                 {posts[3].date}
               
               </p>
-              <h2 className="font-Kadwa font-bold text-lg my-4">
+              <h2 className="font-Kadwa font-bold text-sm md:text-lg my-4">
                 {posts[3].title}
             
               </h2>
               <Link
                 href={`/Blog/${posts[3].id}`}
-                className="text-xs ms-2"
+                className="text-x md:ms-2"
                 style={{ color: "violet" }}
               >
-                  <Button colorScheme='teal'>
+                  <Button className="text-xs md:text-sm" colorScheme='teal'>
                         Read More
                       </Button>
               </Link>
@@ -744,13 +657,15 @@ export default function Blog() {
             </section>
           ) : (
       <div>
+        <section className=" bg-white">
         <Heading
-          className="text-gray-400 font-Kadwa bg-white pt-10 px-40"
+          className="text-gray-400 font-Kadwa bg-white text-center md:text-start pt-11 md:px-48"
           size="md"
         >
           Papular Blogs
         </Heading>
-        <section className="w-screen flex flex-row items-center justify-center bg-white py-12">
+          <div className="w-screen flex flex-row items-center justify-center py-10 bg-white">
+
           <div className="w-11/12 h-full flex flex-row items-center ">
             <Swiper
               id="swiper-color"
@@ -772,7 +687,7 @@ export default function Blog() {
                   spaceBetween: 10,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 1,
                   spaceBetween: 10,
                 },
               }}
@@ -780,12 +695,12 @@ export default function Blog() {
             >
               {posts &&
                 posts.map((post, index) => (
-                  <SwiperSlide key={post.id} className="mx-1">
+                  <SwiperSlide key={post.id} className="">
                     <Card
                       direction={{ base: "column", sm: "row" }}
                       overflow="hidden"
                       variant="outline"
-                      className="flex flex-col items-center justify-center p-1 rounded-none"
+                      className="flex flex-col items-center justify-center p-1 rounded-none h-[500px]"
                       style={{
                         border: "none",
                         borderRight: "solid 1px lightgray",
@@ -806,11 +721,11 @@ export default function Blog() {
                               className=" w-[300px] h-[170px] relative "
                             />
                           )}
-                      {/* <iframe src={post.imageUrl} height="150" width="250" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> */}
+                 
                       <small className="me-44 font-Kadwa text-gray-400 text-xs mt-1">
                         {post.Date}
                       </small>
-                      <Stack style={{ width: "350px" }}>
+                      <Stack className="px-5" style={{ width: "350px",height:"500px" }}>
                         <CardBody>
                           <Heading size="md" className="text-black py-2">
                             {post.title}
@@ -837,6 +752,7 @@ export default function Blog() {
                 ))}
             </Swiper>
           </div>
+          </div>
         </section>
       </div>
          )
@@ -849,7 +765,7 @@ export default function Blog() {
             </section>
           ) : (
       <section className="w-screen flex flex-row items-center justify-center bg-[#EECFBA] pt-2 md:py-12">
-        <div className="bg-white w-[470px] h-[650px] absolute flex justify-center"></div>
+        <div className="bg-white md:w-2/6 md:h-[650px] absolute flex justify-center"></div>
         <Swiper
           id="swiper-color"
           slidesPerView={4}

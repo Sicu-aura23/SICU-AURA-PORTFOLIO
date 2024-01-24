@@ -76,7 +76,7 @@ export default function About() {
             <p className=" font-Inknut text-white font-semibold text-lg md:text-center lg:text-justify">Unwanted Interactions</p>
           </div>
           <div className="aboutGradient flex flex-col justify-center items-center p-6 lg:p-12 gap-8">
-            <Image width='150' height='150' className="lg:w-[220px] lg:h-[150px] md:h-[100px] md:w-[100px] h-[75px] w-[75px]" src={Nostress} alt="zero crime"/>
+            <Image width='150' height='150' className="lg:w-[220px] lg:h-[150px] md:h-[100px] md:w-[220px] h-[75px] w-[220px]" src={Nostress} alt="zero crime"/>
             <p className=" font-Inknut text-white font-semibold text-lg md:text-center lg:text-justify">Stress Free</p>
           </div>
         </div>
