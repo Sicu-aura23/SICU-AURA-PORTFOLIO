@@ -153,4 +153,41 @@ color: #0DF5E3;
   background-size:cover !important;
   height: 30rem;
 } */
+@media (max-width: 1124px) {
+  .latest-blogs{
+      display: flex;
+      flex-wrap: wrap;
+    padding-left: 0px !important;
+  }
+  .latest-blogs div{
+  padding-left: 0px !important;
+}
+.career-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-content{
+  width: 80% !important;
+
+}
+.home-section{
+  padding-left: 0px !important;
+}
+.fb-img{
+  display: none;
+}
+.frame1{
+  display: none !important;
+}
+.vision{
+  display: flex;
+  flex-direction: column !important;
+}
+.vision section {
+  width: auto;
+  padding: 0% 10% 10% 10%;
+}
+
+}
+
 

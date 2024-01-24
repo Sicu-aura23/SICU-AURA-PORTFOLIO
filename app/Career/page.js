@@ -25,7 +25,7 @@ export default function Career() {
         <Image width={1920} height={1080} src={Careerimg} alt="Career" />
         <Socials top="40" />
 
-        <section className=" md:flex flex-row mb-12 mt-28 mx-[10%] gap-6">
+        <section className=" md:flex md:flex-row md:justify-around mb-12 mt-28 mx-[10%] career-content">
           <Image width={620} height={410} className="w-auto h-auto sm:p-8" src={ImgGrp} alt="Group" />
           <div className=" md:font-Inknut  font-medium text-sm text-justify gap-6 flex flex-col w-auto justify-evenly mt-5">
             <p>{`At Sicu-Aura, we're not just building technology, we're building a better future. We believe that innovation shouldn't just be cool, it should be impactful. It should empower people, protect lives, and make the world a little easier to navigate. We're looking for engineers, designers, data scientists, and dreamers who share our vision.`}</p>
