@@ -15,7 +15,7 @@ export default function Frame1 () {
                   It's The Time For Testing. Join Us as a <h1  style={{wordSpacing:"5px"}}>Beta Tester NOW</h1>
                 </p>
                 <p className=' text-sm font-normal font-Inknut md:text-lg md:mt-[10%]'>{`Get the opportunity to experience Next Generation SOS System at first. 200 users will be selected as a Beta Tester on a first come first serve basis. Testing will be done in 8 phases. Each phase's duration will be 7 days and there will be 200 Testers.`}</p>
-                <Button className=' text-xs p-3 bg-white border rounded-full text-black font-Inknut font-semibold md:text-xl w-64 md:p-8 md:mt-[25%]'>
+                <Button className=' text-xs p-3 mt-52 bg-white border rounded-full text-black font-Inknut font-semibold md:text-xl w-64 md:p-8 md:mt-[25%]'>
                    Coming Soon
                 </Button>
             </div>
