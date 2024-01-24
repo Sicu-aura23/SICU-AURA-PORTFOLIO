@@ -23,7 +23,7 @@ export default function Frame1 () {
                 <p className=' text-sm font-Inknut md:text-lg font-normal'>Get the opportunity to experience Next Generation SOS System at first. 200 users will be selected as a Beta Tester</p>
                  <h6  className='text-sm  font-Inknut md:text-lg font-normal'>on a first come first serve basis.</h6>
                 </p>
-                <div className=' flex justify-start'>
+                <div className=' flex justify-start mt-10'>
 
                 <Button onClick={()=>window.open('https://www.facebook.com/profile.php?id=100092369332099&mibextid=LQQJ4d')} leftIcon={<FaFacebookSquare className='text-blue-600 md:text-4xl' />} className= ' bg-white border rounded-full text-black font-Inknut font-semibold md:text-xl w-64 md:p-8 '>
                     Follow us 

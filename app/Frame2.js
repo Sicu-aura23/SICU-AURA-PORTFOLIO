@@ -15,7 +15,7 @@ export default function Frame1 () {
                 <p className=' text-sm font-Inknut md:text-lg font-normal'>Sicu-aura is committed to providing its customers with the highest quality technologies and services. We encourage you to follow us on LinkedIn and join our community of our innovative journey. We look forward to connecting with you!</p>
 
                 </div>
-                <Button onClick={()=>window.open('https://www.linkedin.com/company/sicu-aura/')}  leftIcon={<FaLinkedin className='text-blue-600 md:text-4xl' />} className='bg-white border rounded-full text-black font-Inknut font-semibold md:text-xl md:w-64 md:p-8'>
+                <Button onClick={()=>window.open('https://www.linkedin.com/company/sicu-aura/')}  leftIcon={<FaLinkedin className='text-blue-600 md:text-4xl' />} className='bg-white border rounded-full text-black font-Inknut font-semibold md:text-xl md:w-64 md:p-8 mb-1'>
                     Follow us 
                 </Button>
             </div>
