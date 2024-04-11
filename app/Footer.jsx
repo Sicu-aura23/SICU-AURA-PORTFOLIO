@@ -17,12 +17,6 @@ import linkedin from "@/public/linkedinicon.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 import whatsapp from "@/public/whatsappicon.svg";
-import {
-  FaLinkedin,
-  FaSquareFacebook,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa6";
 import Link from "next/link";
 
 const Footer = () => {
